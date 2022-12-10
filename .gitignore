@@ -1,2 +1,3 @@
 shared
 .vagrant
+vagrant_env.sh
