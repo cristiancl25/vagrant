@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   # normally already configured but for some reason it isn't on some boxes
   # https://www.vagrantup.com/docs/synced-folders/virtualbox.html#automount
   # http://www.virtualbox.org/manual/ch04.html#sf_mount_auto
-  config.vm.synced_folder "./shared/", "/sharedfs", id: "vagrant", automount: true
+  config.vm.synced_folder ".", "/sharedfs", id: "vagrant", automount: true
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
